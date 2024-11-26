@@ -85,7 +85,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#000',
         marginBottom: 30,
-        marginTop: 100
+        marginTop: 100,
+        adjustsFontSizeToFit: true,
+        numberOfLines: 1,
+        flexShrink: 1
     },
     clockContainer: {
         width: '80%', 
