@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { View, Text, StyleSheet, Animated, Easing } from 'react-native';
+import { View, Text, StyleSheet, Animated, Easing, Dimensions } from 'react-native';
 
 const Clock = () => {
 
@@ -81,23 +81,28 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     title: {
-        fontSize: 40,
+        fontSize: 24,  
         fontWeight: 'bold',
         color: '#000',
-        marginBottom: 90,
-        marginTop: 250
-        },
-        clockContainer: {
-            width: 300,
-            height: 300,
-            backgroundColor: '#212121',
-            alignItems: 'center',
-            justifyContent: 'center',
-        },
-        time: {
-            fontSize: 48,
-            fontWeight: 'bold',
-        }
+        marginBottom: 30,
+        marginTop: 100
+    },
+    clockContainer: {
+        width: '80%', 
+        aspectRatio: 1, 
+        backgroundColor: '#212121',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    time: {
+        fontSize: 36,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        width: '100%',
+        flexShrink: 1,
+        adjustsFontSizeToFit: true,
+        numberOfLines: 1,
+    }
 });
 
 export default Clock;
